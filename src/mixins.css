@@ -1,0 +1,71 @@
+@define-mixin bordered {
+  border-width: var(--ditto-border-width);
+  border-style: solid;
+  border-color: var(--ditto-black);
+  border-radius: var(--ditto-border-radius);
+}
+
+@define-mixin text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+@define-mixin text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+@define-mixin text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+@define-mixin text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+@define-mixin text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+@define-mixin text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+@define-mixin text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+@define-mixin text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+@define-mixin text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+@define-mixin text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
+@define-mixin text-7xl {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
+@define-mixin text-8xl {
+  font-size: 6rem;
+  line-height: 1;
+}
+
+@define-mixin text-9xl {
+  font-size: 8rem;
+  line-height: 1;
+}
