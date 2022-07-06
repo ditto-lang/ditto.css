@@ -1,0 +1,12 @@
+html {
+  line-height: 1.5;
+  tab-size: 4;
+}
+
+body {
+  font-family: "Fira Code", monospace;
+
+  /* too far? 
+  text-transform: lowercase;
+  */
+}

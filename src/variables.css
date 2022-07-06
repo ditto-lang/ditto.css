@@ -1,0 +1,21 @@
+:root {
+  --ditto-white: #fff;
+  --ditto-black: #000;
+  --ditto-light-gray: #e9e9e9;
+  --ditto-gray: #767676;
+  --ditto-mint: #beeedc;
+  --ditto-pink: #ef87be;
+  --ditto-blue: #5e7fe1;
+  --ditto-yellow: #f7cf46;
+
+  --ditto-border-width: 3px;
+  --ditto-border-radius: 5px;
+
+  --ditto-spacing-1: 0.25rem;
+  --ditto-spacing-2: 0.5rem;
+  --ditto-spacing-4: 1rem;
+  --ditto-spacing-6: 1.5rem;
+  --ditto-spacing-8: 2rem;
+  --ditto-spacing-10: 2.5rem;
+  --ditto-spacing-12: 3rem;
+}

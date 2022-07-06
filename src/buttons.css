@@ -1,0 +1,45 @@
+button {
+  @mixin bordered;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--ditto-white);
+  padding: var(--ditto-spacing-2) var(--ditto-spacing-4);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+button:hover {
+  /* little wink when you hover ;) */
+  transform: translateY(-2px);
+}
+
+button.black {
+  background-color: var(--ditto-black);
+  color: var(--ditto-white);
+}
+
+button.light-gray {
+  background-color: var(--ditto-light-gray);
+}
+
+button.gray {
+  background-color: var(--ditto-gray);
+  color: var(--ditto-white);
+}
+
+button.mint {
+  background-color: var(--ditto-mint);
+}
+
+button.pink {
+  background-color: var(--ditto-pink);
+}
+
+button.blue {
+  background-color: var(--ditto-blue);
+}
+
+button.yellow {
+  background-color: var(--ditto-yellow);
+}

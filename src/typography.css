@@ -1,0 +1,81 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 300;
+  margin-bottom: 0.6em;
+  margin-top: 0;
+}
+
+.text-4xl,
+h1 {
+  @mixin text-4xl;
+}
+
+.text-3xl,
+h2 {
+  @mixin text-3xl;
+}
+
+.text-2xl,
+h3 {
+  @mixin text-2xl;
+}
+
+.text-xl,
+h4 {
+  @mixin text-xl;
+}
+
+.text-lg,
+h5 {
+  @mixin text-lg;
+}
+
+.text-base,
+h6 {
+  @mixin text-base;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+p {
+  @mixin text-base;
+  margin-top: 0;
+}
+
+pre {
+  overflow-x: auto;
+  margin: 0;
+}
+
+pre,
+code {
+  font-family: "Fira Code", monospace;
+  @mixin text-base;
+}
+
+blockquote {
+  border-left: 0.3rem solid var(--ditto-pink);
+  margin-left: 0;
+  margin-right: 0;
+  padding: var(--ditto-spacing-4) var(--ditto-spacing-6);
+  color: var(--ditto-gray);
+}
+
+blockquote *:last-child {
+  margin-bottom: 0;
+}
+
+li::marker {
+  color: var(--ditto-blue);
+}
+
+dt {
+  color: var(--ditto-blue);
+}

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="description" content="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- assumes you've `npm run build` or `npm run dev` has happened -->
+    <link rel="stylesheet" href="../ditto.css" />
+
+    <style>
+      body {
+        background-color: var(--ditto-light-gray);
+        padding-left: var(--ditto-spacing-4);
+        padding-right: var(--ditto-spacing-4);
+      }
+      body > section {
+        max-width: 800px;
+        margin: var(--ditto-spacing-4) auto;
+        background-color: var(--ditto-white);
+        overflow-x: auto;
+      }
+      .colour-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: var(--ditto-spacing-2);
+        row-gap: var(--ditto-spacing-2);
+        padding: var(--ditto-spacing-4);
+        background-color: var(--ditto-white);
+      }
+      .colour-grid > * {
+        text-align: center;
+        padding: var(--ditto-spacing-1) 0;
+      }
+      .button-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: var(--ditto-spacing-2);
+        row-gap: var(--ditto-spacing-2);
+        padding: var(--ditto-spacing-4);
+        background-color: var(--ditto-white);
+      }
+      .prose {
+        padding: var(--ditto-spacing-4);
+      }
+    </style>
+  </head>
+  <body>
+    <section class="box colour-grid">
+      <div class="box" style="background-color: var(--ditto-mint)">
+        var(--ditto-mint)
+      </div>
+      <div class="box" style="background-color: var(--ditto-pink)">
+        var(--ditto-pink)
+      </div>
+      <div class="box" style="background-color: var(--ditto-blue)">
+        var(--ditto-blue)
+      </div>
+      <div class="box" style="background-color: var(--ditto-yellow)">
+        var(--ditto-yellow)
+      </div>
+      <div class="box" style="background-color: var(--ditto-white)">
+        var(--ditto-white)
+      </div>
+      <div
+        class="box"
+        style="background-color: var(--ditto-black); color: var(--ditto-white)"
+      >
+        var(--ditto-black)
+      </div>
+      <div class="box" style="background-color: var(--ditto-light-gray)">
+        var(--ditto-light-gray)
+      </div>
+      <div
+        class="box"
+        style="background-color: var(--ditto-gray); color: var(--ditto-white)"
+      >
+        var(--ditto-gray)
+      </div>
+    </section>
+
+    <section class="box button-grid">
+      <button>button</button>
+      <button class="black">button.black</button>
+      <button class="gray">button.gray</button>
+      <button class="light-gray">button.light-gray</button>
+      <button class="mint">button.mint</button>
+      <button class="pink">button.pink</button>
+      <button class="blue">button.blue</button>
+      <button class="yellow">button.yellow</button>
+    </section>
+
+    <section class="box">
+      <pre><code class="language-haskell">primes = filterPrime [2..]
+  where filterPrime (p:xs) =
+          p : filterPrime [x | x <- xs, x `mod` p /= 0]</code></pre>
+    </section>
+
+    <section class="box prose">
+      <h1>Heading 1 (.text-4xl)</h1>
+      <p>
+        Lorem ipsum dolor sit amet,
+        <strong>consectetur adipiscing elit</strong>, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet,
+        <em>consectetur adipiscing elit</em>, sed do eiusmod tempor incididunt
+        ut labore et dolore magna aliqua.
+      </p>
+
+      <h2>Heading 2 (.text-3xl)</h2>
+      <p>
+        Vitae sapien pellentesque habitant morbi tristique senectus et. Sem
+        fringilla ut morbi tincidunt augue interdum velit euismod. Laoreet
+        suspendisse interdum consectetur libero id faucibus nisl tincidunt.
+      </p>
+      <blockquote>
+        <p>quote me</p>
+      </blockquote>
+      <p>
+        Vitae sapien pellentesque habitant morbi tristique senectus et. Sem
+        fringilla ut morbi tincidunt augue interdum velit euismod. Laoreet
+        suspendisse interdum consectetur libero id faucibus nisl tincidunt.
+      </p>
+      <h3>Heading 3 (.text-2xl)</h3>
+      <p>
+        Turpis egestas integer eget aliquet nibh. Ut aliquam purus sit amet
+        luctus venenatis lectus magna fringilla. Mi proin sed libero enim sed
+        faucibus turpis in eu. Auctor augue mauris augue neque. Vitae ultricies
+        leo integer malesuada.
+      </p>
+      <ul>
+        <li>List item</li>
+        <li>List item</li>
+        <ul>
+          <li>Nested list item</li>
+          <li>Nested list item</li>
+        </ul>
+        <li>List item</li>
+      </ul>
+      <p>
+        Tempor id eu nisl nunc mi ipsum. Odio eu feugiat pretium nibh ipsum.
+        Pretium vulputate sapien nec sagittis aliquam malesuada bibendum.
+      </p>
+      <h4>Heading 4 (.text-xl)</h4>
+      <p>
+        Turpis egestas integer eget aliquet nibh. Ut aliquam purus sit amet
+        luctus venenatis lectus magna fringilla. Mi proin sed libero enim sed
+        faucibus turpis in eu. Auctor augue mauris augue neque. Vitae ultricies
+        leo integer malesuada.
+      </p>
+      <ol>
+        <li>List item</li>
+        <li>List item</li>
+        <ol>
+          <li>Nested list item</li>
+          <li>Nested list item</li>
+        </ol>
+        <li>List item</li>
+      </ol>
+      <p>
+        Tempor id eu nisl nunc mi ipsum. Odio eu feugiat pretium nibh ipsum.
+        Pretium vulputate sapien nec sagittis aliquam malesuada bibendum.
+      </p>
+      <h5>Heading 5 (.text-lg)</h5>
+      <p>
+        Turpis egestas integer eget aliquet nibh. Ut aliquam purus sit amet
+        luctus venenatis lectus magna fringilla. Mi proin sed libero enim sed
+        faucibus turpis in eu. Auctor augue mauris augue neque. Vitae ultricies
+        leo integer malesuada. Tempor id eu nisl nunc mi ipsum. Odio eu feugiat
+        pretium nibh ipsum. Pretium vulputate sapien nec sagittis aliquam
+        malesuada bibendum.
+      </p>
+      <dl>
+        <dt>Description list item 1</dt>
+        <dd>Description list item 1.1</dd>
+        <dt>Description list item 2</dt>
+        <dd>Description list item 2.1</dd>
+      </dl>
+      <p>
+        Tempor id eu nisl nunc mi ipsum. Odio eu feugiat pretium nibh ipsum.
+        Pretium vulputate sapien nec sagittis aliquam malesuada bibendum.
+      </p>
+      <h6>Heading 6 (.text-base)</h6>
+      <p>
+        Turpis egestas integer eget aliquet nibh. Ut aliquam purus sit amet
+        luctus venenatis lectus magna fringilla. Mi proin sed libero enim sed
+        faucibus turpis in eu. Auctor augue mauris augue neque. Vitae ultricies
+        leo integer malesuada. Tempor id eu nisl nunc mi ipsum. Odio eu feugiat
+        pretium nibh ipsum. Pretium vulputate sapien nec sagittis aliquam
+        malesuada bibendum.
+      </p>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/languages/haskell.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/tota11y/0.1.6/tota11y.min.js"
+      integrity="sha512-1HVjtS0xDBXlnujfjKAaWul3+WZf4hcniLWuXm82KsfodAliukKsfpkgkIjL5MbSHIpe5t8+vT282xjPT5BuTg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>
